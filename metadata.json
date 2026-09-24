@@ -1,0 +1,6 @@
+{
+  "name": "Kaviya's Romantic Birthday Vault",
+  "description": "An interactive romantic birthday web application with 3D floating hearts canvas, Tanglish memory vault lockers, and audio player for Kaviya.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

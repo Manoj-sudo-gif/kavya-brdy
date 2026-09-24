@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaviya's Romantic Birthday Vault</title>
+    <meta name="description" content="An interactive romantic birthday web application with 3D floating hearts canvas, Tanglish memory vault lockers, and audio player for Kaviya." />
+    <meta property="og:title" content="Kaviya's Romantic Birthday Vault" />
+    <meta property="og:description" content="An interactive romantic birthday web application with 3D floating hearts canvas, Tanglish memory vault lockers, and audio player for Kaviya." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#ffeef2] text-[#4a2e35] antialiased selection:bg-[#ffb6c1] selection:text-[#5a1827]">
+    <div id="root"></div>
+    <script>
+      window.__spotifyIframeApiReadyQueue = [];
+      window.onSpotifyIframeApiReady = function(IFrameAPI) {
+        window.IFrameAPI = IFrameAPI;
+        if (window.__spotifyIframeApiReadyQueue) {
+          window.__spotifyIframeApiReadyQueue.forEach(function(cb) {
+            try { cb(IFrameAPI); } catch(e) {}
+          });
+          window.__spotifyIframeApiReadyQueue = null;
+        }
+      };
+    </script>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
